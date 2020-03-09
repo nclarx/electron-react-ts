@@ -1,12 +1,16 @@
+import { hot } from "react-hot-loader/root";
+import React, { useState } from "react";
 
-import {hot} from "react-hot-loader/root";
-import React from "react";
+const App = (): JSX.Element => {
 
-export default hot((): JSX.Element => 
-    (
-        <div>
-          <h1>
-            Your Electron App
-          </h1>
-        </div>
-    ));
+  return (
+    <main>
+      <h1>
+        Electron App w/ React 
+      </h1>
+    </main>
+  )
+}
+
+export default hot(App);
+
